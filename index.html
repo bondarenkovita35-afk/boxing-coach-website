@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alexey Sivakov – Personlig boxningstränare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-theme">
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">BOXING COACH</div>
+
+        <nav class="nav">
+            <a href="#about">Om tränaren</a>
+            <a href="#training">Träningar</a>
+            <a href="#schedule">Schema</a>
+            <a href="#prices">Priser</a>
+            <a href="#gallery">Galleri</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
+
+        <!-- ПЕРЕКЛЮЧАТЕЛЬ ТЕМЫ -->
+        <div class="theme-toggle">
+            <span class="theme-icon">🌙</span>
+            <label class="switch">
+                <input type="checkbox" id="themeCheckbox">
+                <span class="slider"></span>
+            </label>
+            <span class="theme-icon">☀️</span>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Personlig boxningstränare i Bro</h1>
+            <p>Individuella och gruppass för vuxna och barn. Fysik, teknik och självförtroende.</p>
+            <div class="hero-buttons">
+                <button id="bookBtn" class="btn primary">Boka pass</button>
+                <a href="https://www.swish.nu" target="_blank" class="btn secondary">
+                    Betala online
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-card">
+            <div class="hero-photo-wrapper">
+                <img src="img/1764489846476.jpg" alt="Alexey Sivakov" class="hero-photo">
+            </div>
+            <div class="hero-card-text">
+                <h3>Alexey Sivakov</h3>
+                <p>Personlig boxningstränare</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- OM TRÄNAREN -->
+    <section id="about" class="section">
+        <h2>Om tränaren</h2>
+        <p>
+            Jag heter <strong>Alexey Sivakov</strong> och har över 10 års erfarenhet inom boxning
+            och fysträning. Jag arbetar både med nybörjare och erfarna utövare – målet är alltid
+            detsamma: att du ska bli starkare, snabbare och tryggare i dig själv.
+        </p>
+        <p>
+            Tillsammans sätter vi tydliga mål: viktnedgång, bättre kondition, teknik, tävlingsförberedelse
+            eller bara mer energi i vardagen.
+        </p>
+    </section>
+
+    <!-- TRÄNINGAR -->
+    <section id="training" class="section section-dark">
+        <h2>Träningar</h2>
+        <div class="cards">
+            <article class="card">
+                <h3>Individuella pass</h3>
+                <p>1-till-1 träning med fullt fokus på dig. Teknik, slagkombinationer, fotarbete,
+                    fys och mental styrka.</p>
+            </article>
+
+            <article class="card">
+                <h3>Gruppträning</h3>
+                <p>Mind­re grupper för vuxna. Uppvärmning, säck, mittsar, parövningar och lätt sparring
+                    beroende på nivå.</p>
+            </article>
+
+            <article class="card">
+                <h3>Barn & ungdomar</h3>
+                <p>Träning för barn och ungdomar med fokus på koordination, disciplin, trygghet och glädje.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- SCHEMA -->
+    <section id="schedule" class="section">
+        <h2>Schema (exempel)</h2>
+        <table class="schedule-table">
+            <tr>
+                <th>Dag</th>
+                <th>Tid</th>
+                <th>Typ av pass</th>
+            </tr>
+            <tr>
+                <td>Måndag</td>
+                <td>18:00 – 19:30</td>
+                <td>Gruppträning vuxna</td>
+            </tr>
+            <tr>
+                <td>Onsdag</td>
+                <td>18:00 – 19:30</td>
+                <td>Gruppträning vuxna</td>
+            </tr>
+            <tr>
+                <td>Fredag</td>
+                <td>17:00 – 18:30</td>
+                <td>Barn & ungdomar</td>
+            </tr>
+            <tr>
+                <td>Lördag</td>
+                <td>10:00 – 14:00</td>
+                <td>Individuella pass (bokning)</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- PRISER – ПОСЛЕ SCHEMA -->
+    <section id="prices" class="section section-dark">
+        <h2>Priser</h2>
+        <div class="cards">
+            <article class="card">
+                <h3>Individuellt pass</h3>
+                <p>60 minuter personlig träning.</p>
+                <p class="price">från 600 kr / pass</p>
+            </article>
+            <article class="card">
+                <h3>Gruppträning</h3>
+                <p>4–8 personer, perfekt för vänner eller kollegor.</p>
+                <p class="price">från 250 kr / person</p>
+            </article>
+            <article class="card">
+                <h3>Barn & ungdom</h3>
+                <p>Terminsupplägg eller klippkort.</p>
+                <p class="price">pris enligt överenskommelse</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- GALLERI -->
+    <section id="gallery" class="section">
+        <h2>Galleri</h2>
+        <p class="gallery-info">
+            Här kan du se bilder från träningar. Alexey kan ladda upp nya bilder via knappen nedan.
+        </p>
+
+        <div class="gallery-grid" id="galleryGrid">
+            <img src="img/box foto.webp" alt="Boxning" class="gallery-img">
+            <img src="img/barn-box.webp" alt="Barnboxning" class="gallery-img">
+            <img src="img/box vantar.jpg" alt="Boxningshandskar" class="gallery-img">
+        </div>
+
+        <div class="upload-wrapper">
+            <label for="galleryUpload" class="btn secondary">
+                Ladda upp bild (endast för tränaren)
+            </label>
+            <input type="file" id="galleryUpload" accept="image/*" multiple>
+            <p class="upload-hint">
+                * Nya bilder sparas för tillfället bara i webbläsaren (demo). För permanent galleri behövs server/CMS.
+            </p>
+        </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="contact" class="section section-dark">
+        <h2>Kontakt</h2>
+        <div class="contact-wrapper">
+
+            <!-- FORM – EMAIL -->
+            <form id="contactForm" class="contact-form">
+                <h3>Kontakta mig</h3>
+                <label>
+                    Namn
+                    <input type="text" name="name" placeholder="Ditt namn" required>
+                </label>
+                <label>
+                    E-post
+                    <input type="email" name="email" placeholder="Din e-post" required>
+                </label>
+                <label>
+                    Meddelande
+                    <textarea name="message" placeholder="Jag vill boka ett pass ..." required></textarea>
+                </label>
+                <button type="submit" class="btn primary">Skicka</button>
+            </form>
+
+            <!-- FORM – ÅTERUPPRINGNING -->
+            <form id="callbackForm" class="contact-form">
+                <h3>Vill du bli uppringd?</h3>
+                <label>
+                    Namn
+                    <input type="text" name="name" placeholder="Ditt namn" required>
+                </label>
+                <label>
+                    Telefon
+                    <input type="tel" name="phone" placeholder="Ditt telefonnummer" required>
+                </label>
+                <label>
+                    När passar det?
+                    <input type="text" name="time" placeholder="T.ex. vardagar efter kl 17" required>
+                </label>
+                <button type="submit" class="btn secondary">Skicka</button>
+            </form>
+        </div>
+
+        <!-- INFO + KARTA -->
+        <div class="contact-info">
+            <div>
+                <p><strong>E-post:</strong> <a href="mailto:moriahek@gmail.com">moriahek@gmail.com</a></p>
+                <p><strong>Gym:</strong> Bro Nordic Gym</p>
+                <p><strong>Adress:</strong> Centralt i Bro, Stockholm</p>
+            </div>
+        </div>
+
+        <div class="map-wrapper">
+            <h3>Hitta till Bro Nordic Gym</h3>
+            <div class="map-frame">
+                <iframe src="https://www.google.com/maps?q=Bro%20Nordic%20Gym%2C%20Bro%2C%20Sweden&output=embed"
+                    width="100%" height="320" style="border:0;" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-left">
+            © 2025 Alexey Sivakov – Personlig boxningstränare
+        </div>
+        <div class="footer-right">
+            <span>Webbplats av</span>
+            <img src="img/logotip.png" alt="VS LiteCode Studio" class="footer-logo">
+            <span>VS LiteCode Studio</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
